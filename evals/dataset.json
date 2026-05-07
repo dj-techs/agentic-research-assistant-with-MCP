@@ -1,0 +1,60 @@
+{
+  "cases": [
+    {
+      "id": "math-1",
+      "category": "computational",
+      "query": "What is 1234 multiplied by 4567, and then divided by 7?",
+      "expected_specialists": ["code"],
+      "expected_keywords": ["804994", "804,994"],
+      "rubric": "Answer must contain the value 804994 (allow comma formatting). The plan must use the code specialist."
+    },
+    {
+      "id": "math-2",
+      "category": "computational",
+      "query": "Compute the standard deviation of [12, 17, 15, 22, 19, 14, 16].",
+      "expected_specialists": ["code"],
+      "expected_keywords": ["3."],
+      "rubric": "Answer must include a standard deviation around 3.2-3.4. Code specialist must be used."
+    },
+    {
+      "id": "factual-1",
+      "category": "factual",
+      "query": "Who proposed the Transformer architecture and in what year?",
+      "expected_specialists": ["search"],
+      "expected_keywords": ["Vaswani", "2017"],
+      "rubric": "Answer must mention Vaswani et al. and the year 2017."
+    },
+    {
+      "id": "factual-2",
+      "category": "factual",
+      "query": "What does MCP (Model Context Protocol) standardise?",
+      "expected_specialists": ["search"],
+      "expected_keywords": ["context", "tools", "model"],
+      "rubric": "Answer should describe MCP as a protocol for connecting models to external tools/context."
+    },
+    {
+      "id": "summary-1",
+      "category": "summarization",
+      "query": "Find the abstract of the BERT paper on arxiv and give me a 3-bullet summary.",
+      "expected_specialists": ["search", "summarize"],
+      "expected_keywords": ["BERT", "bidirectional"],
+      "rubric": "Answer must include 3 bullets and mention BERT's bidirectional encoder design."
+    },
+    {
+      "id": "multistep-1",
+      "category": "multi_step",
+      "query": "Search for the first arxiv result about retrieval-augmented generation, then summarise it in 2 sentences.",
+      "expected_specialists": ["search", "summarize"],
+      "expected_keywords": ["retrieval"],
+      "rubric": "Answer must summarise a real RAG paper in 2 sentences."
+    },
+    {
+      "id": "mixed-1",
+      "category": "multi_step",
+      "query": "If a model has 175 billion parameters and each parameter is a 16-bit float, how many gigabytes of memory does it need?",
+      "expected_specialists": ["code"],
+      "expected_keywords": ["350"],
+      "rubric": "Answer must compute approximately 350 GB."
+    }
+  ]
+}

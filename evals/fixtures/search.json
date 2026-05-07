@@ -1,0 +1,22 @@
+{
+  "_comment": "Deterministic fixtures used when SEARCH_MODE=fixture. Keys are matched as case-insensitive substrings of the query/url.",
+  "web": {
+    "Transformer architecture": [
+      {"title": "Attention Is All You Need", "url": "https://arxiv.org/abs/1706.03762", "snippet": "Vaswani et al., 2017. The Transformer architecture replaces recurrence with self-attention."},
+      {"title": "Transformer (deep learning) - Wikipedia", "url": "https://en.wikipedia.org/wiki/Transformer_(deep_learning_architecture)", "snippet": "Introduced by Vaswani et al. in 2017 at Google."}
+    ],
+    "Model Context Protocol": [
+      {"title": "Model Context Protocol", "url": "https://modelcontextprotocol.io", "snippet": "MCP is an open protocol that standardises how applications provide context and tools to large language models."},
+      {"title": "Anthropic announces MCP", "url": "https://www.anthropic.com/news/model-context-protocol", "snippet": "An open standard connecting AI assistants to data sources and tools."}
+    ]
+  },
+  "arxiv": {
+    "BERT": [
+      {"title": "BERT: Pre-training of Deep Bidirectional Transformers for Language Understanding", "authors": ["Jacob Devlin", "Ming-Wei Chang", "Kenton Lee", "Kristina Toutanova"], "summary": "We introduce a new language representation model called BERT, which stands for Bidirectional Encoder Representations from Transformers. BERT is designed to pre-train deep bidirectional representations from unlabeled text by jointly conditioning on both left and right context in all layers.", "url": "https://arxiv.org/abs/1810.04805", "published": "2018-10-11"}
+    ],
+    "retrieval-augmented generation": [
+      {"title": "Retrieval-Augmented Generation for Knowledge-Intensive NLP Tasks", "authors": ["Patrick Lewis", "Ethan Perez", "Aleksandra Piktus"], "summary": "We introduce RAG models which combine pre-trained parametric and non-parametric memory for language generation. Parametric memory is a pre-trained seq2seq model and non-parametric memory is a dense vector index of Wikipedia, accessed with a pre-trained neural retriever.", "url": "https://arxiv.org/abs/2005.11401", "published": "2020-05-22"}
+    ]
+  },
+  "fetch": {}
+}
